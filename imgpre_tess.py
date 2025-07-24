@@ -43,11 +43,11 @@ def main():
         st.image(image, use_column_width=True)
 
         st.sidebar.header("Preprocessing Parameters")
-        h = st.sidebar.slider("Denoising strength (h)", 5, 40, 20)
-        clahe_clip = st.sidebar.slider("CLAHE clipLimit", 1, 10, 2)
-        clahe_tile = st.sidebar.slider("CLAHE tileGridSize", 4, 32, 8)
-        block_size = st.sidebar.slider("Adaptive Threshold Block Size", 11, 51, 31, step=2)
-        C = st.sidebar.slider("Adaptive Threshold C", 0, 20, 11)
+        h = st.sidebar.slider("Denoising strength (h)", 5, 40, 19)
+        clahe_clip = st.sidebar.slider("CLAHE clipLimit", 1, 10, 1)
+        clahe_tile = st.sidebar.slider("CLAHE tileGridSize", 4, 32, 19)
+        block_size = st.sidebar.slider("Adaptive Threshold Block Size", 11, 51, 33, step=2)
+        C = st.sidebar.slider("Adaptive Threshold C", 0, 20, 20)
         kernel_size = st.sidebar.slider("Morph Kernel Size", 1, 5, 2)
         morph_iter = st.sidebar.slider("Morph Iterations", 1, 3, 1)
 
